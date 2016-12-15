@@ -1,6 +1,7 @@
-const initialState  = {
-    name: 'Аноним'
+const initialState = {
+  name: 'Аноним'
 }
-export  default function  user(state  = initialState) {
-    return  state
+
+export default function user(state = initialState) {
+  return state
 }

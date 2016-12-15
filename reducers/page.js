@@ -1,12 +1,8 @@
-const initialState  = {
-    year: 2016,
-    photos: []
+
+const initialState = {
+  name: 'Аноним'
 }
-export  default function  page(state  = initialState) {
-    switch  (action.type) {
-        case  'SET_YEAR':
-            return  { ...state, year: action.payload  }
-        default:
-            return  state;
-    }
+
+export default function user(state = initialState) {
+  return state
 }
