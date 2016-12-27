@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
@@ -21,8 +20,15 @@ const initialState2  = {
     year: 2000
 }
 
-function page(state = initialState2){
+function page(state = initialState2, action){
+  switch (action.type){
+    case 'SET_YEAR':
+    return Object.assign({}, state, {photos: action.payload})
+
+
+  default:
   return state
+  }
 }
 
 //////////////////
